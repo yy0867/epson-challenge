@@ -27,8 +27,6 @@
     }
 
     .page {
-      width: 80%;
-      height: 80%;
       padding: 20px;
       box-sizing: border-box;
       background-color: #f0f0f0;
@@ -39,6 +37,7 @@
       font-size: 14px;
       padding: 1em;
       line-height: 150%;
+      height: 83vh;
     }
 
     .title {
@@ -55,6 +54,17 @@
       border: 1px solid black;
       border-collapse: collapse;
     }
+
+    .scaffold {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .spacer {
+      flex-grow: 1;
+    }
   </style>
 </head>
 
@@ -66,10 +76,7 @@
           <p style="font-size: 14px;">큰 꿈을 키우며 사랑이 가득한 해동교육</p>
         </th>
         <th style="width: 60%">
-          <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-            <img width="60px" style="object-fit: cover;" src="./pororo.png" />
-            <h1>해 동 알 림 마 당</h1>
-          </div>
+          <h1>해 동 알 림 마 당</h1>
         </th>
         <th style="width: 20%">
           <p style="font-size: 12px;">
@@ -82,28 +89,29 @@
       <tr>
         <td colspan="3">
           <p style="text-align: center; font-size: 12px; padding: 4px;">
-             ♠ 부산광역시 해운대구 우동 1로 104(우동) ☎ 740-7200 ☞ http://www.haedong.es.kr
+            ♠ 부산광역시 해운대구 우동 1로 104(우동) ☎ 740-7200 ☞ http://www.haedong.es.kr
           </p>
         </td>
       </tr>
       <tr>
         <td class="content" colspan="3">
-          <div style="display: flex; justify-content: center;">
-            <div class="title">
-              <h2 style="text-align: center;">{제목}</h2>
+          <div class="scaffold">
+            <div style="display: flex; justify-content: center;">
+              <div class="title">
+                <h2 style="text-align: center;">{제목}</h2>
+              </div>
             </div>
-          </div>
-          <p>
-            {본문}
-          </p>
-          <br>
-          <p style="font-weight: bold; text-indent: 0px;">
-            ◆ 일시 : {일시} <br>
-            ◆ 장소 : {장소}<br>
-          </p>
-          <p style="font-weight: bold; text-indent: 0px;">
-            ◆ 일정
-          </p>
+            <p>
+              {본문}
+            </p>
+            <br>
+            <p style="font-weight: bold; text-indent: 0px;">
+              ◆ 일시 : {일시} <br>
+              ◆ 장소 : {장소}<br>
+            </p>
+            <p style="font-weight: bold; text-indent: 0px;">
+              ◆ 일정
+            </p>
             <table style="width:100%; margin-top: 5px; margin-bottom: 20px;">
               <tr>
                 <th>시간</th>
@@ -111,14 +119,16 @@
               </tr>
               {테이블}
             </table>
-          <p style="text-indent: 0px;">
-            ◈안내 사항<br>
-            {안내 사항}
-          </p>
-          <br>
-          <p style="text-align: center;">{날짜}</p>
-          <br>
-          <h2 style="text-align: center;">해동초등학교장</h2>
+            <p style="text-indent: 0px;">
+              ◈안내 사항<br>
+              {안내 사항}
+            </p>
+            <br>
+            <div class="spacer"></div>
+            <p style="text-align: center;">{날짜}</p>
+            <br>
+            <h2 style="text-align: center;">해동초등학교장</h2>
+          </div>
         </td>
       </tr>
     </table>
