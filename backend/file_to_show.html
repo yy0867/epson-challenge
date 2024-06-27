@@ -1,9 +1,10 @@
-<!-- copies 25 -->
+<!-- copies 1 -->
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
   <style>
     /* Set A4 size */
     * {
@@ -12,18 +13,25 @@
       box-sizing: border-box;
     }
 
+    @media print {
+
+      html,
+      body {
+        width: 210mm;
+        height: 297mm;
+      }
+    }
+
     @page {
       size: A4;
       margin: 0;
     }
 
-    html,
     body {
       width: 210mm;
       height: 297mm;
       margin: 0;
       padding: 0;
-      display: flex;
     }
 
     .page {
@@ -37,7 +45,7 @@
       font-size: 14px;
       padding: 1em;
       line-height: 150%;
-      height: 83vh;
+      height: 260mm;
     }
 
     .title {
@@ -45,7 +53,10 @@
       padding: 1em;
       width: 80%;
       box-shadow: 5px 5px;
-      margin-block: 1.5em;
+    }
+
+    table {
+      width: 100%;
     }
 
     table,
@@ -56,7 +67,8 @@
     }
 
     .scaffold {
-      height: 100%;
+      width: 190mm;
+      height: 240mm;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -72,13 +84,13 @@
   <div class="page">
     <table style="border: 1px solid;">
       <tr style="border: 1px solid;">
-        <th style="width: 20%; padding: 12px;">
+        <th style="width: 42mm; padding: 12px;">
           <p style="font-size: 14px;">큰 꿈을 키우며 사랑이 가득한 해동교육</p>
         </th>
-        <th style="width: 60%">
+        <th style="width: 126mm">
           <h1>해 동 알 림 마 당</h1>
         </th>
-        <th style="width: 20%">
+        <th style="width: 42mm">
           <p style="font-size: 12px;">
             발행일: 2024. 06. 27<br>
             발행인 : 정재헌 <br>
@@ -96,18 +108,20 @@
       <tr>
         <td class="content" colspan="3">
           <div class="scaffold">
+            <div style="height: 2em"></div>
             <div style="display: flex; justify-content: center;">
               <div class="title">
-                <h2 style="text-align: center;">2024학년도 가을 운동회 안내</h2>
+                <h2 style="text-align: center;">2024 가을 운동회 안내</h2>
               </div>
             </div>
+            <div style="height: 2em"></div>
             <p>
-              학부모님 안녕하십니까? 선선한 바람이 기분 좋게 불어오는 가을을 맞이하여, 우리 학교에서는 『2024학년도 가을 운동회』를 개최하게 되었습니다. 이 운동회가 우리 아이들에게 즐거움과 추억을 선사할 수 있도록 학부모님의 많은 관심과 적극적인 참여를 부탁드립니다. 감사합니다.
+              학부모님 안녕하십니까? 청량한 가을 바람이 기분 좋게 불어오는 계절을 맞아 XX초등학교 가을 운동회가 다가왔습니다. 아이들이 신나고 건강한 추억을 쌓을 수 있도록 학부모님의 많은 관심과 참여 부탁드립니다. 귀한 시간 내셔서 함께 해주시면 더욱 감사하겠습니다.
             </p>
             <br>
             <p style="font-weight: bold; text-indent: 0px;">
-              ◆ 일시 : 2024. 9. 15.(일) 10:00 ~ 15:00 <br>
-              ◆ 장소 : 본교 운동장<br>
+              ◆ 일시 : 2024. 10. 03.(목) 10:00 ~ 14:30 <br>
+              ◆ 장소 : XX중학교 운동장<br>
             </p>
             <p style="font-weight: bold; text-indent: 0px;">
               ◆ 일정
@@ -120,43 +134,40 @@
               
         <tr>
             <td style="text-align: center;">10:00 ~ 11:30</td>
-            <td style="text-align: center;">구기 종목</td>
+            <td style="text-align: center;">저학년 경기</td>
         </tr>
         
         <tr>
             <td style="text-align: center;">11:30 ~ 12:30</td>
-            <td style="text-align: center;">점심 시간</td>
+            <td style="text-align: center;">점심 식사</td>
         </tr>
         
         <tr>
-            <td style="text-align: center;">12:30 ~ 13:30</td>
-            <td style="text-align: center;">학부모 참여 경기</td>
+            <td style="text-align: center;">12:30 ~ 14:00</td>
+            <td style="text-align: center;">고학년 경기</td>
         </tr>
         
         <tr>
-            <td style="text-align: center;">13:30 ~ 14:30</td>
-            <td style="text-align: center;">달리기</td>
-        </tr>
-        
-        <tr>
-            <td style="text-align: center;">14:30 ~ 15:00</td>
+            <td style="text-align: center;">14:00 ~ 14:30</td>
             <td style="text-align: center;">시상 및 정리</td>
         </tr>
         
             </table>
             <p style="text-indent: 0px;">
               ◈안내 사항<br>
-              1. 차량은 학교에 진입할 수 없으며 주차장도 개방하지 않습니다.<br>
-2. 학부모 줄다리기와 이어달리기도 진행됩니다.<br>
-3. 발생한 쓰레기는 각자 수거하여 가정으로 가져가서 처리해 주시기 바랍니다.<br>
-4. 점심이 제공되지 않으므로 각자 도시락을 준비해 주시기 바랍니다.<br>
-5. 방과후 활동은 정상적으로 진행됩니다.<br>
+              1. 학부모님들은 9시 45분까지 운동장으로 와주시기 바랍니다.<br>
+2. 차량은 교내 진입이 금지되어 있으니 대중교통을 이용해주시기 바랍니다.<br>
+3. 도시락을 꼭 준비해주시기 바랍니다.<br>
+4. 특성화, 방과후, 동아리 수업은 정상 진행됩니다.<br>
+5. 장소가 협소하므로 가정당 한 분만 참석 가능합니다.<br>
+6. 아이들의 집중을 위해 사진 촬영은 삼가주시기 바랍니다.<br>
             </p>
             <br>
             <div class="spacer"></div>
             <p style="text-align: center;">2024. 06. 27</p>
             <br>
             <h2 style="text-align: center;">해동초등학교장</h2>
+            <div style="height: 2em;"></div>
           </div>
         </td>
       </tr>
